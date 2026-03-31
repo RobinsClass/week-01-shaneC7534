@@ -83,8 +83,13 @@ ground_plane_height=25
 ground_plane=cmds.polyPlane(name="ground_plater", width=ground_plane_width, height=ground_plane_depth)
 
 #Object 1 
-
-
+building_1_width=6
+building_1_height=5
+building_1_depth=4
+building_1_x=8
+building_1_z=-8
+building_1=cmds.polyCube(name="building_1",width=building_1_width,height=building_1_height,depth=building_1_depth)
+cmds.move(building_1_x,building_1_height/2,building_1_z, building_1)
 # ---------------------------------------------------------------------------
 # TODO: Add Object 2
 # Create a second object using a DIFFERENT primitive type than the cube above.
@@ -93,7 +98,13 @@ ground_plane=cmds.polyPlane(name="ground_plater", width=ground_plane_width, heig
 #   - Name the object meaningfully with the 'name' parameter or cmds.rename().
 #   - Position it so it sits on the ground (not floating or buried).
 # ---------------------------------------------------------------------------
-
+building_2_radius=3
+building_2_height=8
+building_2_subAxis=40
+building_2_x=-4
+building_2_z=-3
+building_2=cmds.polyCylinder(name="building_2",height=building_2_height,radius=building_2_radius, subdivisionsAxis=building_2_subAxis)
+cmds.move(building_2_x,building_2_height/2,building_2_z, building_2)
 
 # ---------------------------------------------------------------------------
 # TODO: Add Object 3
