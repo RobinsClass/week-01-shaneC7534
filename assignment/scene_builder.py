@@ -110,7 +110,22 @@ cmds.move(building_2_x,building_2_height/2,building_2_z, building_2)
 # TODO: Add Object 3
 # ---------------------------------------------------------------------------
 
+#the bottom portion of the tree
+tree_Trunk_height=3.5
+tree_Trunk_radius=0.5
+tree_Trunk_x=7
+tree_Trunk_z=8
+tree_Trunk=cmds.polyCylinder(name="tree_Trunk",height=tree_Trunk_height,radius=tree_Trunk_radius)
+cmds.move(tree_Trunk_x, tree_Trunk_height/2, tree_Trunk_z, tree_Trunk)
 
+#the top portion of the tree
+tree_Top_radius=1.1
+#tree top position values will change with tree trunk position and will remain in the same spot
+tree_Top_x=tree_Trunk_x
+tree_Top_height=3.8
+tree_Top_z=tree_Trunk_z
+tree_Top=cmds.polySphere(name="tree_Top",radius=tree_Top_radius)
+cmds.move(tree_Top_x,tree_Top_height,tree_Top_z,tree_Top)
 # ---------------------------------------------------------------------------
 # TODO: Add Object 4
 # ---------------------------------------------------------------------------
