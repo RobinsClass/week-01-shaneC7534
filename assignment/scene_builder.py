@@ -77,6 +77,14 @@ building = cmds.polyCube(
 # Raise the building so its base sits on the ground plane.
 cmds.move(building_x, building_height / 2.0, building_z, building)
 
+#grounnd plane 
+ground_plane_width=25
+ground_plane_height=25
+ground_plane=cmds.polyPlane(name="ground_plater", width=ground_plane_width, height=ground_plane_depth)
+
+#Object 1 
+
+
 # ---------------------------------------------------------------------------
 # TODO: Add Object 2
 # Create a second object using a DIFFERENT primitive type than the cube above.
