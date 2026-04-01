@@ -80,7 +80,7 @@ cmds.move(building_x, building_height / 2.0, building_z, building)
 #grounnd plane 
 ground_plane_width=25
 ground_plane_height=25
-ground_plane=cmds.polyPlane(name="ground_plater", width=ground_plane_width, height=ground_plane_depth)
+ground_plane=cmds.polyPlane(name="ground_plater", width=ground_plane_width, height=ground_plane_height)
 
 #Object 1 
 building_1_width=6
@@ -109,27 +109,34 @@ cmds.move(building_2_x,building_2_height/2,building_2_z, building_2)
 # ---------------------------------------------------------------------------
 # TODO: Add Object 3
 # ---------------------------------------------------------------------------
+building_3_width=2
+building_3_height=5
+building_3_depth=3
+building_3_x=-5
+building_3_z=5
+building_3=cmds.polyCube(name="building_3", width=building_3_width,height=building_3_height,depth=building_3_depth)
+cmds.move(building_3_x, building_3_height/2,building_3_z,building_3)
+# ---------------------------------------------------------------------------
+# TODO: Add Object 4
+# ---------------------------------------------------------------------------
 
 #the bottom portion of the tree
 tree_Trunk_height=3.5
 tree_Trunk_radius=0.5
+#tree Trunk x and z values when changed will also change the values for the tree toop
 tree_Trunk_x=7
 tree_Trunk_z=8
 tree_Trunk=cmds.polyCylinder(name="tree_Trunk",height=tree_Trunk_height,radius=tree_Trunk_radius)
 cmds.move(tree_Trunk_x, tree_Trunk_height/2, tree_Trunk_z, tree_Trunk)
 
 #the top portion of the tree
-tree_Top_radius=1.1
+tree_Top_radius=1.3
 #tree top position values will change with tree trunk position and will remain in the same spot
 tree_Top_x=tree_Trunk_x
 tree_Top_height=3.8
 tree_Top_z=tree_Trunk_z
 tree_Top=cmds.polySphere(name="tree_Top",radius=tree_Top_radius)
 cmds.move(tree_Top_x,tree_Top_height,tree_Top_z,tree_Top)
-# ---------------------------------------------------------------------------
-# TODO: Add Object 4
-# ---------------------------------------------------------------------------
-
 
 # ---------------------------------------------------------------------------
 # TODO: Add Object 5
