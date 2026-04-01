@@ -44,18 +44,16 @@ cmds.file(new=True, force=True)
 # ---------------------------------------------------------------------------
 # Ground Plane
 # ---------------------------------------------------------------------------
-# Descriptive variables for the ground plane dimensions and position.
+# below creates the ground plane for the scene
 
 ground_plane_width=25
 ground_plane_height=25
 ground_plane=cmds.polyPlane(name="ground_plater", width=ground_plane_width, height=ground_plane_height)
 
 # ---------------------------------------------------------------------------
-# Example Object 1 -- a simple building (cube)
-# This is provided as an example. Study it, then add your own objects below.
+# Object 1 (this is a building using a cube)
 # ---------------------------------------------------------------------------
 
-#Object 1 
 building_1_width=6
 building_1_height=5
 building_1_depth=4
@@ -65,7 +63,7 @@ building_1=cmds.polyCube(name="building_1",width=building_1_width,height=buildin
 cmds.move(building_1_x,building_1_height/2,building_1_z, building_1)
 
 # ---------------------------------------------------------------------------
-# Object 2
+# Object 2 (this is abuilding using a cylinder)
 # ---------------------------------------------------------------------------
 
 building_2_radius=3
@@ -74,10 +72,11 @@ building_2_subAxis=40
 building_2_x=-4
 building_2_z=-3
 building_2=cmds.polyCylinder(name="building_2",height=building_2_height,radius=building_2_radius, subdivisionsAxis=building_2_subAxis)
+#the y position is divided by 2 so the building lays flat on the plane
 cmds.move(building_2_x,building_2_height/2,building_2_z, building_2)
 
 # ---------------------------------------------------------------------------
-# Object 3
+# Object 3 (this is another building using a cube)
 # ---------------------------------------------------------------------------
 building_3_width=2
 building_3_height=5
@@ -85,20 +84,22 @@ building_3_depth=3
 building_3_x=-5
 building_3_z=5
 building_3=cmds.polyCube(name="building_3", width=building_3_width,height=building_3_height,depth=building_3_depth)
+#the y position is divided by 2 so the building lays flat on the plane
 cmds.move(building_3_x, building_3_height/2,building_3_z,building_3)
 # ---------------------------------------------------------------------------
-#  Object 4
+#  Object 4 (this is another cylinder building but with a cone roof)
 # ---------------------------------------------------------------------------
 
-#main part of the building 
+#main part of the building using a cylinder
 building_4_radius=2.5
 building_4_height=6
 building_4_x=6
 building_4_z=3
 building_4=cmds.polyCylinder(name="building_4",height=building_4_height,radius=building_4_radius)
+#the y position is divided by 2 so the building lays flat on the plane
 cmds.move(building_4_x,building_4_height/2,building_4_z,building_4)
 
-#top part of the building
+#top part of the building using a cone
 building_4_top_height=2
 building_4_top_radius=2.5
 bulding_4_Top_x= building_4_x
@@ -108,7 +109,7 @@ building_4_top=cmds.polyCone(name="building_4_top", height=building_4_top_height
 cmds.move(bulding_4_Top_x,building_4_height+1,building_4_Top_z,building_4_top)
 
 # ---------------------------------------------------------------------------
-# Object 5
+# Object 5 (this is a tree with parts of the trunk as a cylinder and top as a sphere)
 # ---------------------------------------------------------------------------
 
 #the bottom portion of the tree
@@ -118,6 +119,7 @@ tree_Trunk_radius=0.5
 tree_Trunk_x=7
 tree_Trunk_z=8
 tree_Trunk=cmds.polyCylinder(name="tree_Trunk",height=tree_Trunk_height,radius=tree_Trunk_radius)
+#the y position is divided by 2 so the building lays flat on the plane
 cmds.move(tree_Trunk_x, tree_Trunk_height/2, tree_Trunk_z, tree_Trunk)
 
 #the top portion of the tree
