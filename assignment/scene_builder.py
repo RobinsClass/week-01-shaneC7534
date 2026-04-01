@@ -119,6 +119,16 @@ cmds.move(building_3_x, building_3_height/2,building_3_z,building_3)
 # ---------------------------------------------------------------------------
 # TODO: Add Object 4
 # ---------------------------------------------------------------------------
+building_4_radius=2.5
+building_4_height=6
+building_4_x=6
+building_4_z=3
+building_4=cmds.polyCylinder(name="building_4",height=building_4_height,radius=building_4_radius)
+cmds.move(building_4_x,building_4_height/2,building_4_z,building_4)
+
+# ---------------------------------------------------------------------------
+# TODO: Add Object 5
+# ---------------------------------------------------------------------------
 
 #the bottom portion of the tree
 tree_Trunk_height=3.5
@@ -137,10 +147,6 @@ tree_Top_height=3.8
 tree_Top_z=tree_Trunk_z
 tree_Top=cmds.polySphere(name="tree_Top",radius=tree_Top_radius)
 cmds.move(tree_Top_x,tree_Top_height,tree_Top_z,tree_Top)
-
-# ---------------------------------------------------------------------------
-# TODO: Add Object 5
-# ---------------------------------------------------------------------------
 
 
 # ---------------------------------------------------------------------------
