@@ -89,12 +89,23 @@ cmds.move(building_3_x, building_3_height/2,building_3_z,building_3)
 # ---------------------------------------------------------------------------
 #  Object 4
 # ---------------------------------------------------------------------------
+
+#main part of the building 
 building_4_radius=2.5
 building_4_height=6
 building_4_x=6
 building_4_z=3
 building_4=cmds.polyCylinder(name="building_4",height=building_4_height,radius=building_4_radius)
 cmds.move(building_4_x,building_4_height/2,building_4_z,building_4)
+
+#top part of the building
+building_4_top_height=2
+building_4_top_radius=2.5
+bulding_4_Top_x= building_4_x
+building_4_Top_z= building_4_z
+building_4_top=cmds.polyCone(name="building_4_top", height=building_4_top_height, radius=building_4_top_radius)
+#the top part uses the main building height to stay in relative position when a values changes for the height
+cmds.move(bulding_4_Top_x,building_4_height+1,building_4_Top_z,building_4_top)
 
 # ---------------------------------------------------------------------------
 # Object 5
