@@ -45,42 +45,18 @@ cmds.file(new=True, force=True)
 # Ground Plane
 # ---------------------------------------------------------------------------
 # Descriptive variables for the ground plane dimensions and position.
-ground_width = 50
-ground_depth = 50
-ground_y_position = 0
-
-ground = cmds.polyPlane(
-    name="ground_plane",
-    width=ground_width,
-    height=ground_depth,
-    subdivisionsX=1,
-    subdivisionsY=1,
-)[0]
-cmds.move(0, ground_y_position, 0, ground)
+#grounnd plane 
+ground_plane_width=25
+ground_plane_height=25
+ground_plane=cmds.polyPlane(name="ground_plater", width=ground_plane_width, height=ground_plane_height)
 
 # ---------------------------------------------------------------------------
 # Example Object 1 -- a simple building (cube)
 # This is provided as an example. Study it, then add your own objects below.
 # ---------------------------------------------------------------------------
-building_width = 4
-building_height = 6
-building_depth = 4
-building_x = -8
-building_z = 5
 
-building = cmds.polyCube(
-    name="building_01",
-    width=building_width,
-    height=building_height,
-    depth=building_depth,
-)[0]
-# Raise the building so its base sits on the ground plane.
-cmds.move(building_x, building_height / 2.0, building_z, building)
 
-#grounnd plane 
-ground_plane_width=25
-ground_plane_height=25
-ground_plane=cmds.polyPlane(name="ground_plater", width=ground_plane_width, height=ground_plane_height)
+
 
 #Object 1 
 building_1_width=6
