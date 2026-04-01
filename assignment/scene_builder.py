@@ -43,21 +43,15 @@ cmds.file(new=True, force=True)
 
 # ---------------------------------------------------------------------------
 # Ground Plane
-# ---------------------------------------------------------------------------
-# Descriptive variables for the ground plane dimensions and position.
-#grounnd plane 
 ground_plane_width=25
 ground_plane_height=25
 ground_plane=cmds.polyPlane(name="ground_plater", width=ground_plane_width, height=ground_plane_height)
+# ---------------------------------------------------------------------------
+# Descriptive variables for the ground plane dimensions and position.
 
 # ---------------------------------------------------------------------------
 # Example Object 1 -- a simple building (cube)
 # This is provided as an example. Study it, then add your own objects below.
-# ---------------------------------------------------------------------------
-
-
-
-
 #Object 1 
 building_1_width=6
 building_1_height=5
@@ -66,6 +60,9 @@ building_1_x=8
 building_1_z=-8
 building_1=cmds.polyCube(name="building_1",width=building_1_width,height=building_1_height,depth=building_1_depth)
 cmds.move(building_1_x,building_1_height/2,building_1_z, building_1)
+# ---------------------------------------------------------------------------
+
+
 # ---------------------------------------------------------------------------
 # TODO: Add Object 2
 # Create a second object using a DIFFERENT primitive type than the cube above.
