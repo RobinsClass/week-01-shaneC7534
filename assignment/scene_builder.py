@@ -65,6 +65,9 @@ building_1=cmds.polyCube(name="building_1",width=building_1_width,height=buildin
 cmds.move(building_1_x,building_1_height/2,building_1_z, building_1)
 
 # ---------------------------------------------------------------------------
+# TODO: Add Object 2
+# ---------------------------------------------------------------------------
+
 # Object2
 building_2_radius=3
 building_2_height=8
@@ -73,8 +76,6 @@ building_2_x=-4
 building_2_z=-3
 building_2=cmds.polyCylinder(name="building_2",height=building_2_height,radius=building_2_radius, subdivisionsAxis=building_2_subAxis)
 cmds.move(building_2_x,building_2_height/2,building_2_z, building_2)
-
-# ---------------------------------------------------------------------------
 
 # ---------------------------------------------------------------------------
 # TODO: Add Object 3
