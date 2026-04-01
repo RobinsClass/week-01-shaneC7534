@@ -65,10 +65,9 @@ building_1=cmds.polyCube(name="building_1",width=building_1_width,height=buildin
 cmds.move(building_1_x,building_1_height/2,building_1_z, building_1)
 
 # ---------------------------------------------------------------------------
-# TODO: Add Object 2
+# Object 2
 # ---------------------------------------------------------------------------
 
-# Object2
 building_2_radius=3
 building_2_height=8
 building_2_subAxis=40
@@ -78,7 +77,7 @@ building_2=cmds.polyCylinder(name="building_2",height=building_2_height,radius=b
 cmds.move(building_2_x,building_2_height/2,building_2_z, building_2)
 
 # ---------------------------------------------------------------------------
-# TODO: Add Object 3
+# Object 3
 # ---------------------------------------------------------------------------
 building_3_width=2
 building_3_height=5
@@ -88,7 +87,7 @@ building_3_z=5
 building_3=cmds.polyCube(name="building_3", width=building_3_width,height=building_3_height,depth=building_3_depth)
 cmds.move(building_3_x, building_3_height/2,building_3_z,building_3)
 # ---------------------------------------------------------------------------
-# TODO: Add Object 4
+#  Object 4
 # ---------------------------------------------------------------------------
 building_4_radius=2.5
 building_4_height=6
@@ -98,7 +97,7 @@ building_4=cmds.polyCylinder(name="building_4",height=building_4_height,radius=b
 cmds.move(building_4_x,building_4_height/2,building_4_z,building_4)
 
 # ---------------------------------------------------------------------------
-# TODO: Add Object 5
+# Object 5
 # ---------------------------------------------------------------------------
 
 #the bottom portion of the tree
@@ -121,7 +120,7 @@ cmds.move(tree_Top_x,tree_Top_height,tree_Top_z,tree_Top)
 
 
 # ---------------------------------------------------------------------------
-# TODO (Optional): Add more objects to make your scene more interesting!
+# (Optional): Add more objects to make your scene more interesting!
 # Consider: trees, lamp posts, fences, vehicles, animals, etc.
 # ---------------------------------------------------------------------------
 
